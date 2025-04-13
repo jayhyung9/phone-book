@@ -12,9 +12,6 @@ const ContactList = () => {
     contact.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  
-
-
   return <div>
 
 <Box display="flex" flexDirection="column" alignItems="center" gap={2} mt={4}>
@@ -32,12 +29,6 @@ const ContactList = () => {
       ))}
     </Box>
 
-{phoneBook.map((item)=>(
-<div key={item.id}>
-<p>{item.name}</p>
-<p>{item.phoneNumber}</p>
-</div>
-))}
   </div>
 }
 
